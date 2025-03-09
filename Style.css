@@ -1,0 +1,36 @@
+* {
+  outline: none;
+}
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  background-color: #eee;
+  height: 100vh;
+}
+.container{
+  width: 80%;
+  border: 1px solid  black;
+}
+.container label {
+  margin: 0 auto;
+}
+input {
+  height: 30px;
+  background-color: transparent;
+  margin-bottom: 20px;
+  border: 1px solid  black;
+}
+.container button {
+  width:50px;
+  height: 25px;
+  margin-bottom: 20px;
+}
+.container p {
+  width: 100px;
+  height: 30px;
+  border: 1px solid  black;
+}
