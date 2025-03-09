@@ -53,3 +53,4 @@ pass.addEventListener("input", function() {
     passTest.style.backgroundColor = 'red';
   }
 });
+alert("JavaScript is working!");
