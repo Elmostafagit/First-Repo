@@ -1,21 +1,3 @@
-let num1 = document.getElementById("num1");
-let num2 = document.getElementById("num2");
-let add = document.getElementById("add");
-let na9is = document.getElementById("na9is");
-let result = document.getElementById("result");
-let color = document.getElementById("color");
-const container = document.getElementById("container")
-
-add.addEventListener('click', function() {
-  result.textContent = parseFloat(num1.value) + parseFloat(num2.value);
-});
-
-na9is.addEventListener('click', function() {
-  result.textContent = parseFloat(num1.value) - parseFloat(num2.value);
-});
-color.addEventListener ("input", function() {
-  container.style.backgroundColor = color.value;
-})
 // For the password part
 const passTest = document.getElementById("passTest");
 let pass = document.getElementById("passInput");
@@ -43,14 +25,13 @@ pass.addEventListener("input", function() {
 
   // Display password strength
   if (isStrong) {
-    passResult.value = "Your password is strong";
+    passResult.textContent = "Your password is strong";
     passTest.style.backgroundColor = 'green';
   } else if (isMedium) {
-    passResult.value = "Your password is medium";
+    passResult.textContent = "Your password is medium";
     passTest.style.backgroundColor = 'yellow';
   } else {
-    passResult.value = "Your password is weak";
+    passResult.textContent = "Your password is weak";
     passTest.style.backgroundColor = 'red';
   }
 });
-alert("JavaScript is working!");
